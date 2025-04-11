@@ -1,0 +1,167 @@
+/* Blog Section */
+.blog-section {
+    background: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Responsive Background Video */
+  .blog-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+    filter: brightness(0.5); /* Adjust brightness for better readability */
+  }
+  
+  /* Ensure content is above the video */
+  .blog-heading,
+  .blog-grid,
+  .view-more {
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Blog Heading */
+  .blog-heading {
+    color: white; /* Ensures visibility on video */
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    margin-top: 100px;
+  }
+  
+  /* Blog Grid */
+  .blog-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+  }
+  
+  /* Blog Card */
+  .blog-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .blog-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Blog Image */
+  .blog-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  /* Blog Content */
+  .blog-content {
+    padding: 15px;
+  }
+  
+  .blog-meta {
+    font-size: 14px;
+    color: #777;
+  }
+  
+  .blog-title {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px 0;
+    color: #383434;
+  }
+  
+  .blog-description {
+    font-size: 14px;
+    color: #555;
+  }
+  
+  /* Read More Link */
+  .read-more {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 14px;
+    color: #d9534f;
+    text-decoration: none;
+    font-weight: bold;
+    width: 100%;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  
+  /* View More Button */
+  .view-more {
+    display: inline-block; /* Ensures button takes only required space */
+    background: #d9534f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 20px;
+    border-radius: 5px;
+    transition: background 0.3s;
+    text-align: center;
+    width: auto; /* Auto width based on content */
+    min-width: 150px; /* Prevents button from being too small */
+}
+  
+  .view-more:hover {
+    background: #c9302c;
+  }
+  
+  /* 🌍 RESPONSIVENESS */
+  
+  /* Tablet View (768px and below) */
+  @media (max-width: 768px) {
+    .blog-heading {
+      font-size: 2rem;
+    }
+    
+    .blog-grid {
+      grid-template-columns: 1fr; /* One column for smaller screens */
+    }
+  
+    .blog-image {
+      height: 180px;
+    }
+  }
+  
+  /* Mobile View (480px and below) */
+  @media (max-width: 480px) {
+    .blog-heading {
+      font-size: 1.8rem;
+      margin-top: 20px;
+    }
+  
+    .blog-content {
+      padding: 10px;
+    }
+  
+    .blog-title {
+      font-size: 16px;
+    }
+  
+    .blog-description {
+      font-size: 13px;
+    }
+  
+    .view-more {
+      padding: 8px 16px;
+      font-size: 14px;
+    }
+  }
+  

@@ -1,0 +1,216 @@
+/* Reset and base styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Full-screen red background */
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #610808;
+  min-height: 100vh;
+  padding: 100px 20px 20px;
+  box-sizing: border-box;
+}
+
+/* Wrapper for form + image */
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 1100px;
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+  margin-top: 2rem;
+}
+
+/* LEFT SIDE */
+.contact-left {
+  flex: 1;
+  background: #f3f3f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+}
+
+.contact-img {
+  width: 100%;
+  max-height: 320px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.contact-card {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 20px;
+  width: 100%;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.contact-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.contact-item .icon {
+  font-size: 20px;
+  color: #7c3aed;
+}
+
+.contact-item .label {
+  font-weight: 600;
+  margin-bottom: 2px;
+}
+
+/* RIGHT SIDE */
+.contact-right {
+  flex: 1;
+  padding: 40px;
+}
+
+.contact-right h2 {
+  font-size: 26px;
+  margin-bottom: 10px;
+}
+
+.contact-right p {
+  font-size: 15px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea,
+.contact-form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.phone-group {
+  display: flex;
+  gap: 10px;
+}
+
+.phone-group select {
+  width: 30%;
+}
+
+.phone-group input {
+  width: 70%;
+}
+
+.checkbox {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  font-size: 14px;
+  margin-bottom: 16px;
+}
+
+.checkbox a {
+  color: #7c3aed;
+  text-decoration: none;
+}
+
+.contact-form button {
+  background-color: #910808;
+  color: white;
+  border: none;
+  padding: 12px;
+  width: 100%;
+  border-radius: 8px;
+  font-weight: 600;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #d81616;
+}
+
+/* Responsive Styling */
+@media (max-width: 992px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
+
+  .contact-left,
+  .contact-right {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .contact-right {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-right h2 {
+    font-size: 22px;
+  }
+
+  .contact-right p {
+    font-size: 14px;
+  }
+
+  .phone-group {
+    flex-direction: column;
+  }
+
+  .phone-group select,
+  .phone-group input {
+    width: 100%;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    font-size: 13px;
+  }
+
+  .contact-form button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-right {
+    padding: 20px 10px;
+  }
+
+  .contact-img {
+    max-height: 200px;
+  }
+
+  .contact-card {
+    padding: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form select {
+    padding: 10px;
+  }
+
+  .contact-form button {
+    padding: 10px;
+  }
+}
