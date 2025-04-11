@@ -5,12 +5,13 @@ header .navbar {
   background-color: transparent;
   z-index: 1000;
   height: 6rem;
+  padding: 0 1rem;
 }
 
 header .navbar.sticky {
   position: fixed;
-  left: 0;
   top: 0;
+  left: 0;
   background-color: var(--white);
   transition: all 0.15s ease-in-out;
   animation: stickyTransition 0.5s both;
@@ -20,36 +21,33 @@ header .navbar.sticky {
 @keyframes stickyTransition {
   0% {
     opacity: 0;
-    transform: translate3d(0, -100%, 0);
+    transform: translateY(-100%);
   }
   100% {
     opacity: 1;
-    transform: none;
+    transform: translateY(0);
   }
 }
 
-/* Align logo to the left */
+/* Logo styling */
 header .navbar .navbar-brand {
   margin-right: auto;
+  padding: 0;
 }
 
 header .logo img {
-  width: 15rem;
+  width: 12rem;
   height: auto;
   object-fit: contain;
   background: transparent;
+  transition: all 0.3s ease-in-out;
 }
 
-/* Remove unnecessary image class */
-.img {
-  height: auto;
-  width: auto;
-}
-
-/* Nav links */
+/* Navigation links */
 header .nav-link {
   display: inline-flex;
   justify-content: center;
+  align-items: center;
   color: var(--white);
   padding: 0 1rem !important;
   font-size: 1.125rem;
@@ -67,7 +65,7 @@ header .nav-link:hover {
   color: var(--yellow);
 }
 
-/* Cart icon */
+/* Cart Icon */
 header .cart {
   position: relative;
   top: -0.4375rem;
@@ -91,23 +89,40 @@ header .roundpoint {
 @media (max-width: 992px) {
   header .navbar {
     background-color: var(--white);
+    padding: 0.5rem 1rem;
   }
+
   header .navbar-toggler {
     border: none;
   }
+
   header .navbar-toggler:focus {
     outline: none;
     box-shadow: none;
   }
+
   header .navbar-toggler-icon {
     width: 2.5rem;
     height: 2.5rem;
   }
+
   header .nav-link {
     color: var(--light-black);
     padding: 1rem !important;
+    text-align: center;
   }
+
   header .logo img {
-    width: 8rem;
+    width: 9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  header .logo img {
+    width: 7rem;
+  }
+
+  header .nav-link {
+    font-size: 1rem;
   }
 }

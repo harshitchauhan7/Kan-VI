@@ -1,115 +1,157 @@
 /* Brands Page Styling */
 .brands-page {
-    padding: 50px 20px;
-    text-align: center;
-    background: #751616;
-  }
+  padding: 50px 20px;
+  text-align: center;
+  background: #751616;
+}
+
+/* Hero Section */
+.hero-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  text-align: left;
+}
+
+.hero-text {
+  max-width: 500px;
+}
+
+.hero-text h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.hero-text .highlight {
+  color: #ffffff;
+}
+
+.hero-text p {
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.hero-image img {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+  margin-top: 7rem;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tabs button {
+  background: #ccc;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: 0.3s;
+  width: auto;
+}
+
+.tabs button.active {
+  background: #e73131;
+  color: white;
+  font-weight: bold;
+}
+
+/* Brands Grid */
+.brands-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.brand-card {
+  background: white;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.brand-card img {
+  width: 80px;
+  height: 80px;
+  object-fit: contain;
+}
+
+.brand-card h4 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.brand-card p {
+  font-size: 14px;
+  color: #777;
+}
+
+/* Buttons inside brand card */
+.card-buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-around;
+  gap: 10px;
+}
+
+.btn-outline {
+  background: transparent;
+  border: 2px solid #e1dc45;
+  color: #e73131;
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-outline:hover {
+  background: #e3d847;
+  color: white;
+}
+
+.btn-primary {
+  background: #d41d1d;
+  border: none;
+  color: rgb(255, 255, 255);
+  padding: 6px 12px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
   
-  /* Hero Section */
+}
+
+.btn-primary:hover {
+  background: #5e0101;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
   .hero-section {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1200px;
-    margin: auto;
-    text-align: left;
-  }
-  
-  .hero-text {
-    max-width: 500px;
-  }
-  
-  .hero-text h1 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  
-  .hero-text .highlight {
-    color: #ffffff;
-  }
-  
-  .hero-text p {
-    font-size: 1rem;
-    color: #ffffff;
-  }
-  
-  .hero-image img {
-    width: 100%;
-    max-width: 400px;
-    border-radius: 10px;
-    margin-top: 7rem;
-  }
-  
-  /* Tabs */
-  .tabs {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
-  }
-  
-  .tabs button {
-    background: #ccc;
-    border: none;
-    padding: 10px 20px;
-    margin: 0 5px;
-    font-size: 1rem;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: 0.3s;
-    width: auto;
-  }
-  
-  .tabs button.active {
-    background: #e73131;
-    color: white;
-    font-weight: bold;
-  }
-  
-  /* Brands Grid */
-  .brands-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-  }
-  
-  .brand-card {
-    background: white;
-    border-radius: 10px;
-    padding: 15px;
+    flex-direction: column;
     text-align: center;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   }
-  
-  .brand-card img {
-    width: 80px;
-    height: 80px;
-    object-fit: contain;
+
+  .hero-text {
+    max-width: 100%;
   }
-  
-  .brand-card h4 {
-    font-size: 18px;
-    margin: 10px 0;
+
+  .card-buttons {
+    flex-direction: column;
+    gap: 8px;
   }
-  
-  .brand-card p {
-    font-size: 14px;
-    color: #777;
-  }
-  
-  /* Responsive Design */
-  @media (max-width: 768px) {
-    .hero-section {
-      flex-direction: column;
-      text-align: center;
-    }
-  
-    .hero-text {
-      max-width: 100%;
-    }
-  }
-  
+}

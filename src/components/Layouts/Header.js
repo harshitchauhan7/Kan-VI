@@ -34,6 +34,7 @@ const Header = () => {
               <Nav.Link as={Link} to="/about">About</Nav.Link>
               <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
               <Nav.Link as={Link} to="/brands">Brands</Nav.Link>
+              <Nav.Link as={Link} to="/why">Why Choose Us</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
               <Nav.Link as={Link} to="/">
                 <div className="cart">
