@@ -24,14 +24,6 @@
     color: #e67e22;
   }
   
-  .cta-btn {
-    margin-top: 20px;
-    background-color: #e67e22;
-    border: none;
-    padding: 10px 30px;
-    font-size: 1.1rem;
-  }
-  
   .info-section-wrapper {
     background-color: #610808;
     padding: 60px 0;
@@ -69,6 +61,13 @@
   .info-text p {
     font-size: 1.1rem;
     line-height: 1.6;
+  }
+  .cta-btn {
+    margin-top: 20px;
+    background-color: #e62222;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.1rem;
   }
   
   /* Responsive */

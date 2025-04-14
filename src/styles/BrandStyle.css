@@ -128,7 +128,7 @@
   padding: 8px 16px;
   border: none;
   border-radius: 20px;
-  background-color: #007bff;
+  background-color: #ec2727;
   color: white;
   cursor: pointer;
   font-size: 0.9rem;
@@ -136,5 +136,5 @@
 }
 
 .brand-buttons button:hover {
-  background-color: #0056b3;
+  background-color: #b30000;
 }
