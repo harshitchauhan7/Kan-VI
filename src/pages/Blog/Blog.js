@@ -5,7 +5,7 @@ const blogs = [
   {
     id: 1,
     image:
-      "https://img.freepik.com/free-photo/food-blogger-young-fitness-cook-recording-video-social-media-making-salad_140725-166774.jpg?t=st=1744265653~exp=1744269253~hmac=d34914d5e72569c8e0f5a925731c0cdee3a1ff6696f984e11978cbd70698a6a0&w=740",
+      "https://img.freepik.com/free-photo/young-blogger-showing-decor-diy-tutorial_23-2148538791.jpg?t=st=1744625675~exp=1744629275~hmac=8b0274001e3ec1d8075c3f64ba3d32ad79a96abb601130fc46d976d7ce4f1a5b&w=1380",
     date: "February 22, 2025",
     author: "Ethan Brooks",
     title: "From My Kitchen to Yours: Recipes That Warm the Soul",
@@ -14,17 +14,17 @@ const blogs = [
   {
     id: 2,
     image:
-      "https://img.freepik.com/free-photo/food-blogger-young-girl-pink-apron-recording-video-social-media-cutting-lettuce_140725-166784.jpg?t=st=1744265660~exp=1744269260~hmac=d76de31467970cc355acd21a493fd1d85fca014c92466a13470e8c62d497539e&w=740",
+      "https://img.freepik.com/free-photo/happy-blogger-showing-decor-diy-tutorial_23-2148538792.jpg?t=st=1744625783~exp=1744629383~hmac=b526336faad6e70329c870a5fc58479347b8b2087138bd9113579ea271398dde&w=1380",
     date: "March 27, 2025",
     author: "Lily Thompson",
     title: "Budget Bites: Big Flavor Without Burning Your Wallet",
-    description:
+    description:    
       "Tasty, easy, affordable meals that keep both belly and budget happy",
   },
   {
     id: 3,
     image:
-      "https://img.freepik.com/free-photo/food-blogger-pretty-cute-healthy-chef-recording-video-social-media-holding-parsley_140725-166760.jpg?t=st=1744265676~exp=1744269276~hmac=c9be882c4b97bb8e2094c391d72ba601e462490fc94b6297b78c11610104b9af&w=740",
+      "https://img.freepik.com/free-photo/young-blogger-showing-decor-diy-tutorial-camera_23-2148538793.jpg?t=st=1744625948~exp=1744629548~hmac=ec261b8a77b48510b6ac608070bae0d3ff4f6e30ec14808db8fab5396bd890fc&w=1380",
     date: "April 3, 2025",
     author: "Oliver Davis",
     title: "Midnight Cravings? Quick Bites in Under 15 Minutes",
@@ -33,7 +33,7 @@ const blogs = [
   {
     id: 4,
     image:
-      "https://img.freepik.com/free-photo/food-blogger-cute-lovely-chef-pink-apron-recording-video-social-media-covering-mouth-happy_140725-166708.jpg?t=st=1744265670~exp=1744269270~hmac=27e5033c1ebb66d44f31c831ffffdd32582a11d113f089d3bdb6bc59b102d815&w=740",
+      "https://img.freepik.com/free-photo/young-blogger-smiling-holding-shopping-bag_23-2148538787.jpg?t=st=1744626008~exp=1744629608~hmac=d06123f7d19ae193debc8b433ceb7f9cd86718ee3f6b5c0d57fce2b85adfede3&w=1380",
     date: "December 5, 2024",
     author: "Ava Bennett",
     title: "Fusion Feasts: When East Meets West on Your Plate",
