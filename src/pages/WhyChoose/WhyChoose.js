@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       {/* 🔥 Background Video */}
       <video autoPlay loop muted className="background-video">
         <source
-          src="https://img.freepik.com/free-vector/blue-white-gradient-abstract-background_53876-60241.jpg?uid=R101376618&ga=GA1.1.1714697244.1713441758&semt=ais_hybrid&w=740"
+          src="https://videocdn.cdnpk.net/videos/18d2161b-3ff5-52b2-bb08-6031eca96e4f/horizontal/previews/clear/large.mp4?token=exp=1744614246~hmac=a3f54c86d6ebe2289d33f9b8fad9cb8de0e08e2182169522fd7a18b284c0520a"
           type="video/mp4"
         />
         Your browser does not support the video tag.
@@ -26,8 +26,9 @@ const WhyChooseUs = () => {
               daily. Our food is prepared with love, using authentic recipes and 
               handpicked ingredients that bring the rich taste of tradition to your plate.
             </p>
-            <Button className="cta-btn">Explore Our Meals</Button>
+            {/* <Button className="cta-bt">Explore Our Meals</Button> */}
           </Col>
+          {/* <Button className="cta-bt">Explore Our Meals</Button> */}
         </Row>
       </Container>
 

@@ -104,7 +104,7 @@ function Section3() {
       <Container>
         <Row>
           <Col lg={{ span: 8, offset: 2 }} className="text-center mb-5">
-            <h2>OUR CRAZY Food Items!</h2>
+            <h2>OUR CRAZY Brands!</h2>
             <p className="para">
               Aliquam a augue suscipit, luctus neque purus ipsum neque undo
               dolor primis libero tempus, blandit a cursus varius magna

@@ -15,7 +15,7 @@
   }
   
   .top-content {
-    padding: 100px 20px 60px;
+    padding: 200px 20px 60px;
     color: rgb(127, 25, 25);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   }
@@ -62,13 +62,17 @@
     font-size: 1.1rem;
     line-height: 1.6;
   }
-  .cta-btn {
+  .cta-bt {
     margin-top: 20px;
     background-color: #e62222;
     border: none;
     padding: 10px 30px;
     font-size: 1.1rem;
-  }
+  } 
+
+  /* .cta-bt :hover{
+    background-color: #610808;
+  } */
   
   /* Responsive */
   @media (max-width: 768px) {
