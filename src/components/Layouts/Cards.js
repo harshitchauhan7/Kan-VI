@@ -26,7 +26,7 @@ function Cards({ image,  title, paragraph}) {
             </div> */}
             <div className="add_to_card">
               <Link to="/brands">
-                <i class="bi bi-bag me-2"></i>
+                {/* <i class="bi bi-bag me-2"></i> */}
                 Explore Brands
               </Link>
             </div>
