@@ -2,6 +2,11 @@
 import React from 'react';
 import '../../styles/BrandStyle.css';
 
+// ✅ Import images from local assets folder
+import franzooImg from '../../assets/menu/image.png';
+import musicTacoImg from '../../assets/menu/muic2.png';
+import lunchImg from '../../assets/menu/lunch.png';
+
 const Brands = () => {
   return (
     <div className="brands-container">
@@ -21,9 +26,10 @@ const Brands = () => {
       <section className="brands-details">
         <h2>Our Partner Brands</h2>
         <div className="brand-grid">
+          
           {/* Brand Card 1 */}
           <div className="brand-card">
-            <img src="http://localhost:3000/static/media/image.70d8588788b630f07053.png" alt="Amazon" />
+            <img src={franzooImg} alt="Franzoo Bowl" />
             <h3>Franzoo Bowl</h3>
             <p>Leading e-commerce platform delivering a wide range of products globally with fast shipping.</p>
             <div className="brand-buttons">
@@ -34,7 +40,7 @@ const Brands = () => {
 
           {/* Brand Card 2 */}
           <div className="brand-card">
-            <img src="http://localhost:3000/static/media/muic2.76bc70b4cf8b7cbedba2.png" alt="Microsoft" />
+            <img src={musicTacoImg} alt="Music Taco Bell" />
             <h3>Music Taco Bell</h3>
             <p>Innovating productivity and enterprise tools, empowering digital transformation globally.</p>
             <div className="brand-buttons">
@@ -45,7 +51,7 @@ const Brands = () => {
 
           {/* Brand Card 3 */}
           <div className="brand-card">
-            <img src="http://localhost:3000/static/media/lunch.0854ebc65f01cbded28a.png" alt="Netflix" />
+            <img src={lunchImg} alt="Lunch Break Kart" />
             <h3>Lunch Break Kart</h3>
             <p>Streaming global entertainment with exclusive shows, movies, and original content.</p>
             <div className="brand-buttons">
@@ -56,7 +62,7 @@ const Brands = () => {
 
           {/* Brand Card 4 */}
           <div className="brand-card">
-            <img src="http://localhost:3000/static/media/muic2.76bc70b4cf8b7cbedba2.png" alt="LogoTV" />
+            <img src={musicTacoImg} alt="Music Taco Bell" />
             <h3>Music Taco Bell</h3>
             <p>Celebrating LGBTQ+ culture with original shows, documentaries, and creative storytelling.</p>
             <div className="brand-buttons">
@@ -64,9 +70,9 @@ const Brands = () => {
               <button>Visit Site</button>
             </div>
           </div>
+          
         </div>
       </section>
-
     </div>
   );
 };
