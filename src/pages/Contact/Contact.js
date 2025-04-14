@@ -1,13 +1,23 @@
 import React from 'react';
 import '../../styles/ContactStyle.css';
-import contactImg from '../../assets/hero/istockphoto-1483023376-612x612.jpg'; // Adjust this path accordingly
+import contactImg from '../../assets/hero/istockphoto-1483023376-612x612.jpg';
+import heroBg from '../../assets/hero/hero-2.png';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
-      <div className="contact-wrapper">
+    <div className="contact-page">
 
-        {/* LEFT SIDE */}
+      {/* HERO SECTION */}
+      <div className="contact-hero">
+        <div className="contact-hero-content">
+          <h1>CONTACT US</h1>
+          <p>We'd love to hear from you. Let's talk!</p>
+        </div>
+      </div>
+
+      {/* LEFT + RIGHT SECTION */}
+      <div className="contact-wrapper">
+        {/* LEFT */}
         <div className="contact-left">
           <img src={contactImg} alt="contact" className="contact-img" />
           <div className="contact-card">
@@ -35,7 +45,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE */}
+        {/* RIGHT */}
         <div className="contact-right">
           <h2>Get in touch</h2>
           <p>Our friendly team would love to hear from you.</p>
@@ -44,8 +54,8 @@ const Contact = () => {
             <input type="email" placeholder="abc@gmail.com" />
             <div className="phone-group">
               <select>
-                <option value="US">IND</option>
-                <option value="IN">IN</option>
+                <option value="IND">IND</option>
+                <option value="US">US</option>
               </select>
               <input type="tel" placeholder="+91 111-4444-777" />
             </div>
@@ -53,7 +63,6 @@ const Contact = () => {
             <button type="submit">Send message</button>
           </form>
         </div>
-
       </div>
     </div>
   );
