@@ -15,7 +15,7 @@ body {
 
 /* HERO SECTION */
 .contact-hero {
-  background: url('https://img.freepik.com/free-vector/blue-white-gradient-abstract-background_53876-60241.jpg?uid=R101376618&ga=GA1.1.1714697244.1713441758&semt=ais_hybrid&w=740') center/cover no-repeat;
+  background: url('https://img.freepik.com/free-photo/olive-oil-cherry-tomato-with-raw-italian-pasta-black-backdrop_23-2148195021.jpg?t=st=1744617104~exp=1744620704~hmac=88158cc9a91c2116ac93ce351d33cd0a22242d1be604fa83923183fc26375840&w=1380') center/cover no-repeat;
   height: 300px;
   width: 100%;
   display: flex;
@@ -74,6 +74,7 @@ body {
   overflow: hidden;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
+  margin-top: 50px;
 }
 
 /* LEFT SIDE */

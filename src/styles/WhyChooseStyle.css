@@ -16,16 +16,16 @@
   
   .top-content {
     padding: 200px 20px 60px;
-    color: rgb(127, 25, 25);
+    color: rgb(254, 254, 254);
     text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.8);
   }
   
   .top-content h1 span {
-    color: #e67e22;
+    color: #231e19;
   }
   
   .info-section-wrapper {
-    background-color: #610808;
+    background-color: #ffffff;
     padding: 60px 0;
     width: 100vw;
     overflow: hidden;
@@ -49,11 +49,11 @@
   }
   
   .info-text {
-    color: white;
+    color: rgb(37, 26, 26);
   }
   
   .info-text h3 {
-    color: #e67e22;
+    color: #261d1d;
     font-size: 1.8rem;
     margin-bottom: 20px;
   }

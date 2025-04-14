@@ -6,7 +6,7 @@ import Salad from "../../assets/about/salad.png";
 import Delivery from "../../assets/about/delivery-bike.png";
 
 // Mock Data Cards
-const mockData = [
+const mockData= [
   {
     image: Pizza,
     title: "Original",
@@ -33,7 +33,7 @@ function Section2() {
           <Row>
             <Col lg={{ span: 8, offset: 2 }} className="text-center">
               <h2>Good food tastes even better when shared with loved ones!</h2>
-              <p>
+              <p className="para">
                 Porta semper lacus cursus, feugiat primis ultrice a ligula risus
                 auctor an tempus feugiat dolor lacinia cubilia curae integer
                 orci congue and metus integer primis in integer metus

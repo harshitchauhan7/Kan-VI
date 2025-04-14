@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       {/* 🔥 Background Video */}
       <video autoPlay loop muted className="background-video">
         <source
-          src="https://videocdn.cdnpk.net/videos/18d2161b-3ff5-52b2-bb08-6031eca96e4f/horizontal/previews/clear/large.mp4?token=exp=1744614246~hmac=a3f54c86d6ebe2289d33f9b8fad9cb8de0e08e2182169522fd7a18b284c0520a"
+          src="https://videocdn.cdnpk.net/videos/7bbc9b41-eaab-4313-9c01-f1605c9ff0ff/horizontal/previews/clear/small.mp4?token=exp=1744621617~hmac=b5884f3f02abae6cee46c520d594297b11c650bc9f073e67efe999b107bdf303"
           type="video/mp4"
         />
         Your browser does not support the video tag.
