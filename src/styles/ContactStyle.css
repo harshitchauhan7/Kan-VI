@@ -23,7 +23,8 @@ body {
   justify-content: center;
   position: relative;
   margin: 0;
-  padding: 0;
+  padding : 0;
+  
 }
 
 .contact-hero::before {
