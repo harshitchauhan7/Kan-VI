@@ -1,112 +1,72 @@
-import React, { useState } from "react";
-import "../../styles/BrandStyle.css";
+// brands.js
+import React from 'react';
+import '../../styles/BrandStyle.css';
 
 const Brands = () => {
-  const [activeTab, setActiveTab] = useState("businesses");
-
-  const businesses = [
-    {
-      name: "Franzoo Bowl",
-      location:
-        "Franzoo Bowl serves a vibrant fusion of bold flavors and fresh ingredients—crafted bowls that energize your taste buds and deliver a modern twist on healthy dining. LOVE'S FOOD",
-      logo:
-        "https://images.unsplash.com/photo-1545361367-3202270671e7?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Music Taco Bell",
-      location:
-        "Miss, Turn up the flavor with Music Taco Bell — where every bite hits the right note! These tacos are a delicious symphony of crunchy shells, zesty fillings, and bold spices that dance on your taste buds.",
-      logo:
-        "https://images.unsplash.com/photo-1667840606484-aba533d9c35c?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8TG9nbyUyME1UQnxlbnwwfHwwfHx8MA%3D%3D",
-    },
-    {
-      name: "Lunch Break Kart",
-      location:
-        "Toronto, Lunch Break Kart delivers quick, tasty meals right to your desk. From hot lunches to refreshing snacks, we fuel your day with fresh flavors—fast and fuss-free!",
-      logo:
-        "https://plus.unsplash.com/premium_photo-1669075651663-3f264ed78316?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      name: "Ultra Lounge",
-      location:
-        "Vaughan, Ultra Lounge blends gourmet flavors with a chic ambiance—serving crafted dishes, signature cocktails, and a modern vibe perfect for food lovers and night owls alike.",
-      logo:
-        "https://images.unsplash.com/photo-1659993445173-279e4f37c216?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-  ];
-
-  const startups = [
-    {
-      name: "Pizza Pops",
-      location: "Brampton",
-      logo:
-        "https://images.unsplash.com/photo-1655462968944-9a901f4c3f85?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8TG9nbyUyMFBpenphJTIwcG9wfGVufDB8fDB8fHww",
-    },
-    {
-      name: "Egg Holic",
-      location: "Toronto",
-      logo:
-        "https://plus.unsplash.com/premium_photo-1683133428030-ed210d7498ba?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8TG9nbyUyMEVnZyUyMGhvbGljfGVufDB8fDB8fHww",
-    },
-  ];
-
   return (
-    <div className="brands-page">
-      <div className="spacer"></div>
+    <div className="brands-container">
 
-      <section className="hero-section">
-        <div className="hero-text">
-          <h3>Deliver Sustainable Growth</h3>
-          <h1>
-            Our Valued <span className="highlight">Food Partners</span>
-          </h1>
+      {/* Hero Section */}
+      <section className="hero">
+        <div className="hero-content">
+          <h1>Empowering Your Brand's Digital Presence</h1>
           <p>
-            We support our partners with technology and marketing to help them
-            thrive. Our ecosystem is designed to help restaurants, cafes, and
-            food entrepreneurs flourish.
+            We help innovative businesses connect with customers through stunning and strategic design.
           </p>
-        </div>
-        <div className="hero-image">
-          <img
-            src="https://plus.unsplash.com/premium_photo-1737232107236-d3915640140e?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-            alt="Food Partners"
-          />
+          <button className="hero-btn">Get Started</button>
         </div>
       </section>
 
-      <div className="tabs">
-        <button
-          className={activeTab === "businesses" ? "active" : ""}
-          onClick={() => setActiveTab("businesses")}
-        >
-          Food Businesses
-        </button>
-        <button
-          className={activeTab === "startups" ? "active" : ""}
-          onClick={() => setActiveTab("startups")}
-        >
-          Food Start-ups
-        </button>
-      </div>
-
-      <div className="brands-grid">
-        {(activeTab === "businesses" ? businesses : startups).map(
-          (brand, index) => (
-            <div key={index} className="brand-card">
-              <img src={brand.logo} alt={brand.name} />
-              <h4>{brand.name}</h4>
-              <p>{brand.location}</p>
-
-              {activeTab === "businesses" && (
-                <div className="card-buttons">
-                  <button className="btn-outline">Swiggy</button>
-                  <button className="btn-primary">Zomato</button>
-                </div>
-              )}
+      {/* Brands Grid Section */}
+      <section className="brands-details">
+        <h2>Our Partner Brands</h2>
+        <div className="brand-grid">
+          {/* Brand Card 1 */}
+          <div className="brand-card">
+            <img src="http://localhost:3000/static/media/image.70d8588788b630f07053.png" alt="Amazon" />
+            <h3>Franzoo Bowl</h3>
+            <p>Leading e-commerce platform delivering a wide range of products globally with fast shipping.</p>
+            <div className="brand-buttons">
+              <button>Learn More</button>
+              <button>Visit Site</button>
             </div>
-          )
-        )}
-      </div>
+          </div>
+
+          {/* Brand Card 2 */}
+          <div className="brand-card">
+            <img src="http://localhost:3000/static/media/muic2.76bc70b4cf8b7cbedba2.png" alt="Microsoft" />
+            <h3>Music Taco Bell</h3>
+            <p>Innovating productivity and enterprise tools, empowering digital transformation globally.</p>
+            <div className="brand-buttons">
+              <button>Learn More</button>
+              <button>Visit Site</button>
+            </div>
+          </div>
+
+          {/* Brand Card 3 */}
+          <div className="brand-card">
+            <img src="http://localhost:3000/static/media/lunch.0854ebc65f01cbded28a.png" alt="Netflix" />
+            <h3>Lunch Break Kart</h3>
+            <p>Streaming global entertainment with exclusive shows, movies, and original content.</p>
+            <div className="brand-buttons">
+              <button>Learn More</button>
+              <button>Visit Site</button>
+            </div>
+          </div>
+
+          {/* Brand Card 4 */}
+          <div className="brand-card">
+            <img src="http://localhost:3000/static/media/muic2.76bc70b4cf8b7cbedba2.png" alt="LogoTV" />
+            <h3>Music Taco Bell</h3>
+            <p>Celebrating LGBTQ+ culture with original shows, documentaries, and creative storytelling.</p>
+            <div className="brand-buttons">
+              <button>Learn More</button>
+              <button>Visit Site</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
   );
 };

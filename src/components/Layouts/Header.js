@@ -37,10 +37,10 @@ const Header = () => {
               <Nav.Link as={Link} to="/why">Why Choose Us</Nav.Link>
               <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
               <Nav.Link as={Link} to="/">
-                <div className="cart">
+                {/* <div className="cart">
                   <i className="bi bi-bag fs-5"></i>
                   <em className="roundpoint">2</em>
-                </div>
+                </div> */}
               </Nav.Link>
             </Nav>
           </Navbar.Collapse>

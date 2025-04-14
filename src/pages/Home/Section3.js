@@ -1,22 +1,22 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Image1 from "../../assets/menu/pizza2.jpg";
-import Image2 from "../../assets/menu/momo.jpg";
-import Image3 from "../../assets/menu/french-fries.jpg";
-import Image4 from "../../assets/menu/burger.jpg";
-import Image5 from "../../assets/menu/noodle.jpg";
-import Image6 from "../../assets/menu/chicken-sauce.jpg";
-import Image7 from "../../assets/menu/sanwitch1.jpg";
-import Image8 from "../../assets/menu/thali2.avif";
+import Image1 from "../../assets/menu/image.png";
+import Image2 from "../../assets/menu/muic2.png";
+import Image3 from "../../assets/menu/lunch.png";
+import Image4 from "../../assets/menu/image.png";
+import Image5 from "../../assets/menu/muic2.png";
+import Image6 from "../../assets/menu/lunch.png";
+import Image7 from "../../assets/menu/image.png";
+import Image8 from "../../assets/menu/muic2.png";
 import Cards from "../../components/Layouts/Cards";
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 
 // Mock Data Cards
 const mockData = [
   {
     id: "0001",
     image: Image1,
-    title: "Veg Onino Pizza",
+    title: "Franzoo Bowl",
     paragraph: "Savor the Zesty Delight of Veg Onion Pizza!",
     rating: 5,
     price: 299,
@@ -24,7 +24,7 @@ const mockData = [
   {
     id: "0002",
     image: Image2,
-    title: "Veg Momos",
+    title: "Music Taco Bell",
     paragraph: "Steamed to Perfection: Indulge in Flavorful Veg Momos!",
     rating: 4.5,
     price: 149,
@@ -32,7 +32,7 @@ const mockData = [
   {
     id: "0003",
     image: Image3,
-    title: "French Fries",
+    title: "Lunch Break Kart",
     paragraph: "Crispy, Golden, and Irresistible – Dive into Delicious French Fries!",
     rating: 4,
     price: 99,
@@ -40,7 +40,7 @@ const mockData = [
   {
     id: "0004",
     image: Image4,
-    title: "Vegan Burger",
+    title: "Franzoo Bowl",
     paragraph: "House patty, cheddar cheese, bacon, onion, mustard",
     rating: 3.5,
     price: 199,
@@ -48,7 +48,7 @@ const mockData = [
   {
     id: "0005",
     image: Image5,
-    title: "Veg Nodels",
+    title: "Music Taco Bell",
     paragraph: "Slurp Up the Flavor – Tasty & Tempting Veg Noodles!",
     rating: 3.0,
     price: 149,
@@ -56,7 +56,7 @@ const mockData = [
   {
     id: "0006",
     image: Image6,
-    title: "Checken Sour",
+    title: "Lunch Break Kart",
     paragraph: "A Tangy Twist of Flavor – Savor the Zest of Chicken Sour!",
     rating: 3,
     price: 399,
@@ -64,7 +64,7 @@ const mockData = [
   {
     id: "0007",
     image: Image7,
-    title: "Smokey House",
+    title: "Franzoo Bowl",
     paragraph: "patty, cheddar cheese, onion, lettuce, tomatoes, pickles",
     rating: 2.5,
     price: 199,
@@ -72,7 +72,7 @@ const mockData = [
   {
     id: "0008",
     image: Image8,
-    title: "Veg Thali",
+    title: "Music Taco Bell",
     paragraph: "cheddar cheese, ketchup, mustard, pickles, onion",
     rating: 2.0,
     price: 349,
@@ -125,7 +125,7 @@ function Section3() {
           ))}
         </Row>
 
-        <Row className="pt-5">
+        {/* <Row className="pt-5">
           <Col sm={6} lg={5}>
             <div className="ads_box ads_img1 mb-5 mb-md-0">
               <h4 className="mb-0">GET YOUR FREE</h4>
@@ -144,7 +144,7 @@ function Section3() {
               </Link>
             </div>
           </Col>
-        </Row>
+        </Row> */}
       </Container>
     </section>
   );

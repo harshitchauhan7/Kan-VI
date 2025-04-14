@@ -7,9 +7,8 @@
   padding-top: 170px;
   padding-bottom: 90px;
 }
-.hero_section .price_badge {
-  background: url("../assets/hero/price-badge-yellow.png") no-repeat center
-    center;
+/* .hero_section .price_badge {
+  background: url("") no-repeat center center;
   background-size: cover;
   position: absolute;
   top: -20px;
@@ -17,7 +16,7 @@
   width: 180px;
   height: 176px;
   text-align: center;
-}
+} */
 .hero_section .badge_text {
   width: 100%;
   position: absolute;
@@ -54,9 +53,9 @@
 
 /* Home About 2.0 */
 .about_section {
-  padding-top: 80px;
-  padding-bottom: 300px;
-  background: url("../assets/about/about-1.jpg") no-repeat center center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background: url("") no-repeat center center;
   background-size: cover;
   width: 100%;
 }
@@ -69,7 +68,7 @@
   font-size: 19px;
 }
 .about_wrapper {
-  background: var(--yellow);
+  background: rgb(234, 80, 80);
   padding-top: 70px;
   padding-bottom: 30px;
 }
@@ -86,6 +85,7 @@
 .about_box p {
   padding: 0 20px;
 }
+
 
 /* Home Menu 3.0 */
 .menu_section {
@@ -104,18 +104,18 @@
   padding: 10px 100px;
   font-size: 19px;
 }
-.menu_section .item_rating i {
+/* .menu_section .item_rating i {
   color: var(--yellow);
   padding-right: 5px;
-}
+} */
 .menu_section .wishlist i {
   color: var(--grey);
   font-size: 20px;
   cursor: pointer;
 }
-.menu_section .wishlist i:hover {
+/* .menu_section .wishlist i:hover {
   color: var(--light-red);
-}
+} */
 .menu_section .card-title {
   font-family: var(--oswald-font);
   font-weight: 600;
@@ -126,18 +126,18 @@
   color: var(--grey);
   font-size: 15px;
 }
-.menu_section .menu_price {
+/* .menu_section .menu_price {
   background-color: var(--bg-coffee);
   display: inline-block;
   padding: 7px 12px;
   border-radius: 4px;
-}
-.menu_section .menu_price h5 {
+} */
+/* .menu_section .menu_price h5 {
   color: var(--yellow);
   font-size: 1rem;
-}
+} */
 .menu_section .add_to_card a {
-  background: var(--yellow);
+  background: var(--light-red);
   display: inline-block;
   font-size: 1rem;
   line-height: 1;
@@ -151,6 +151,7 @@
   -ms-transition: all 500ms ease-in-out;
   -o-transition: all 500ms ease-in-out;
   transition: all 500ms ease-in-out;
+  color: white;
 }
 
 .menu_section .card:hover .card-img-top {
@@ -206,7 +207,7 @@
 
 /* Home Parallax 5.0 */
 .bg_parallax_scroll {
-  background: url("../assets/parallax/bg.jpg") no-repeat center center;
+  background: url("https://img.freepik.com/free-photo/anime-style-cozy-home-interior-with-furnishings_23-2151176396.jpg?t=st=1744535879~exp=1744539479~hmac=dc88a117cd1ca8c2c8dc3bc99073326d56d956684f585b76b3197d9c3a20241f&w=1380") no-repeat center center;
   background-size: cover;
   background-attachment: fixed;
   width: 100%;
@@ -216,18 +217,18 @@
 /* Home Shop 6.0 */
 .shop_section {
   padding: 100px 0 0;
-  background: var(--yellow);
+  background: var(--light-grey);
 }
 .shop_section h4 {
   font-size: 2.375rem;
   font-weight: 400;
-  color: var(--bg-coffee);
+  color: var(--light-black);
 }
 .shop_section h2 {
   font-size: 4.5rem;
   font-weight: 700;
   letter-spacing: -1px;
-  color: var(--bg-coffee);
+  color: var(--light-black);
 }
 .shop_section p {
   font-size: 1.125rem;
@@ -291,6 +292,7 @@
   margin-bottom: 2rem;
 }
 
+
 /* Home Contact 8.0 */
 .contact_section {
   background: url("../assets/footer/banner-1.jpg") no-repeat center center;
@@ -332,7 +334,7 @@ footer p {
 footer .calling {
   font-size: 1.8rem;
   font-weight: 800;
-  color: var(--yellow);
+  color: var(--light-red);
 }
 footer ul li {
   display: inline-block;
@@ -384,6 +386,23 @@ footer .copy_right ul li:last-child:after {
   font-size: 1.5rem;
   color: var(--white);
 }
+.btn-order_now {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  padding: 20px 40px;
+  border: 2px solid rgb(237, 172, 172);
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-order_now:hover {
+  background-color: rgb(174, 25, 25);
+  color: rgb(255, 255, 255);
+  border-color: red;
+}
+
 
 /* Media Query Mobiles */
 
